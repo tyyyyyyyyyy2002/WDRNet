@@ -70,10 +70,10 @@ The datasets should be organized as follows:
 ###  Usage 
 ```bash
 # Training
-python train.py --config configs/aernet.yaml
+python train.py --dataroot ./datasets/weather --name AllWeather --mode WDRNet
 
 # Testing
-python test.py --input ./samples/inputs --output ./samples/results
+python test.py --dataroot ./datasets/weather --name  AllWeather --mode WDRNet --phase train
 
 ```
 ---
@@ -83,9 +83,9 @@ python test.py --input ./samples/inputs --output ./samples/results
 If you find this work useful in your research, please cite:
 
 ```bibtex
-@article{AERNet2025,
-  title={AERNet: Unsupervised All-Weather Enhancement via Weather Type Transfer and Clear-Domain Alignment},
-  author={Yunyi Tang, Bowei Fang, Chunyu Zhao, Haoran Liu, Fei Yan and Tao Deng},
+@article{WDRNet2025,
+  title={WDRNet: Wavelet-Based Deweathering Restoration for Unsupervised All-Weather Image Enhancement},
+  author={Yunyi Tang, Bowei Fang, Fei Yan and Tao Deng},
   year={2025}
 }
 
