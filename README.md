@@ -85,7 +85,6 @@ If you find this work useful in your research, please cite:
 ```bibtex
 @article{WDRNet2025,
   title={WDRNet: Wavelet-Based Deweathering Restoration for Unsupervised All-Weather Image Enhancement},
-  author={Yunyi Tang, Bowei Fang, Fei Yan and Tao Deng},
   year={2025}
 }
 
