@@ -1,4 +1,4 @@
-# 🌟 AERNet: All-Weather Enhancement Network  
+# 🌟 WDRNet: Wavelet-Based Deweathering Restoration for Unsupervised All-Weather Image Enhancement 
 
 Adverse weather conditions such as rain, nighttime, fog, and snow significantly degrade visibility in traffic scenes, posing challenges for both human drivers and autonomous vehicles. To address this, we propose **AERNet**, an **unsupervised all-weather enhancement network** that leverages **Weather Type Transfer (WTT)**, **Stability Regularizer (SR)**, and **Clear-Domain Alignment (CDA)**. AERNet enhances degraded images into high-quality, structurally consistent, and visually stable outputs, without requiring paired training data.  
 
@@ -7,9 +7,9 @@ Adverse weather conditions such as rain, nighttime, fog, and snow significantly 
 ---
 ## 📰 News  
 
-- **Sep 18, 2025**: Our paper is under submission to **ICASSP 2026** 📑  
-- **Jul 8, 2025**: Codes are released!  🚀
-- **Jul 8, 2025**: Homepage is released!💥
+- **Dec 10, 2025**: Our paper is under submission to **ICME 2026** 📑  
+- **Nov 8, 2025**: Codes are released!  🚀
+- **Nov 8, 2025**: Homepage is released!💥
 ---
 
 ## 🏗️ Model Architecture  
