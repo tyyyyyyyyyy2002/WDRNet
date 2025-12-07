@@ -1,8 +1,6 @@
-# 🌟 WDRNet: Wavelet-Based Deweathering Restoration for Unsupervised All-Weather Image Enhancement 
+# 🌟 Breaking Weather Degradation: Wavelet-Contrastive WDRNet for Unsupervised All-Weather Understanding 
 
-Adverse weather conditions such as rain, nighttime, fog, and snow significantly degrade visibility in traffic scenes, posing challenges for both human drivers and autonomous vehicles. To address this, we propose **AERNet**, an **unsupervised all-weather enhancement network** that leverages **Weather Type Transfer (WTT)**, **Stability Regularizer (SR)**, and **Clear-Domain Alignment (CDA)**. AERNet enhances degraded images into high-quality, structurally consistent, and visually stable outputs, without requiring paired training data.  
-
-![Architecture diagram](images/gif.gif)  
+Adverse weather conditions such as rain, fog, snow, and low-light significantly degrade visibility in traffic scenes, challenging both human drivers and autonomous vehicles. To address this, we propose **WDRNet (Wavelet Deweathering Restoration Network)**, an **unsupervised all-weather image enhancement network** that leverages a **Spatial–Frequency Wavelet Pyramid Discriminator (SPF-WPD)** and a **Wavelet High-frequency Contrastive Consistency Loss (WHCC)**. **WDRNet** effectively removes large-area weather degradations while preserving high-frequency details such as road edges, vehicle boundaries, and building contours, producing **high-quality, structurally consistent, and visually faithful images** without requiring paired training data.
 
 ---
 ## 📰 News  
@@ -19,18 +17,11 @@ Adverse weather conditions such as rain, nighttime, fog, and snow significantly 
 
 ### ✨ Key Features  
 
-- ** AERNet Framework**  
-  An **unsupervised Network** designed for all-weather image enhancement, demonstrating competitive performance across multiple real-world and benchmark datasets.  
+1. **Unsupervised All-Weather Enhancement**: WDRNet is specifically designed for real-world traffic scenes, balancing **low-frequency weather removal** with **high-frequency texture preservation**.
 
-- ** Weather Type Transfer (WTT)**  
-  Introduces a **data-driven framework** for unsupervised all-weather enhancement, using **dual-level discriminators** to tackle the challenge of limited paired data.  
+2. **Spatial–Frequency Wavelet Pyramid Discriminator (SPF-WPD)**: This discriminator models large-area weather degradations across **multiple spatial and frequency scales**, improving robustness under diverse adverse conditions.
 
-- ** Stability Regularizer (SR)**  
-  Ensures temporal and structural stability across weather transitions, preventing flickering and maintaining detail preservation.  
-
-- ** Clear-Domain Alignment (CDA)**
-  A module that disentangles **structural features** from **weather-induced effects**, adaptively modulating perturbation features via weather-label embeddings to achieve accurate, detail-preserving, and robust image enhancements.
-
+3. **Wavelet High-frequency Contrastive Consistency Loss (WHCC)**: Combines **multi-level feature contrastive learning** with **wavelet high-frequency consistency** to effectively preserve fine details such as **road edges, vehicle boundaries, and building contours**.
 ---
 
 ## 📊 Experimental Results  
