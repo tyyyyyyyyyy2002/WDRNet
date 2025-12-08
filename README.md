@@ -44,7 +44,7 @@ Adverse weather such as rain, fog, snow, and low light severely degrades visibil
 
 <div align="center">
   <img src="images/randa.png" alt="Detection example 1" width="20%" />
-  <img src="images/decdata.png" alt="Detection example 2" width="60%" />
+  <img src="images/decdata.png" alt="Detection example 2" width="75%" />
 </div>
 <div align="center">
   <img src="images/decphoto.png" alt="Architecture diagram" width="1200" />
