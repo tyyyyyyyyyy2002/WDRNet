@@ -51,7 +51,7 @@ class DWTLayer(nn.Module):
 
 
 
-class CUTModel(BaseModel):
+class WDRNet(BaseModel):
     """ This class implements CUT and FastCUT model, described in the paper
     Contrastive Learning for Unpaired Image-to-Image Translation
     Taesung Park, Alexei A. Efros, Richard Zhang, Jun-Yan Zhu
@@ -64,7 +64,7 @@ class CUTModel(BaseModel):
     def modify_commandline_options(parser, is_train=True):
         """  Configures options specific for CUT model
         """
-        parser.add_argument('--mode', type=str, default="CUT", choices='(CUT, cut, FastCUT, fastcut)')
+        parser.add_argument('--mode', type=str, default="WDRNet")
 
         parser.add_argument('--lambda_GAN', type=float, default=1.0, help='weight for GAN loss：GAN(G(X))')
         parser.add_argument('--lambda_NCE', type=float, default=1.0, help='weight for NCE loss: NCE(G(X), X)')
@@ -87,9 +87,7 @@ class CUTModel(BaseModel):
         opt, _ = parser.parse_known_args()
 
         # Set default parameters for CUT and FastCUT
-        if opt.mode.lower() == "cut":
-            parser.set_defaults(nce_idt=True, lambda_NCE=1.0, lambda_wavelet=1.0)
-        elif opt.mode.lower() == "fastcut":
+        if opt.mode.lower() == "WDRNet":
             parser.set_defaults(
                 nce_idt=False, lambda_NCE=2.0, lambda_CLIP=0.1, flip_equivariance=True, lambda_wavelet=1.0,
                 n_epochs=150, n_epochs_decay=50
@@ -194,14 +192,8 @@ class CUTModel(BaseModel):
                 self.optimizers.append(self.optimizer_F)
 
     def optimize_parameters(self):
-        # =========================
-        # 1. 前向传播
-        # =========================
         self.forward()
 
-        # =========================
-        # 2. 更新全局判别器 D
-        # =========================
         self.set_requires_grad(self.netD, True)
         self.optimizer_D.zero_grad()
         self.loss_D = self.compute_D_loss()  # 全局判别器损失
@@ -219,9 +211,6 @@ class CUTModel(BaseModel):
         # else:
         #     print("c")
 
-        # =========================
-        # 4. 更新生成器 G
-        # =========================
         self.set_requires_grad(self.netD, False)
         if self.patchD:
             self.set_requires_grad(self.netD_P, False)
