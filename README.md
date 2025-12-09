@@ -51,10 +51,9 @@ Adverse weather such as rain, fog, snow, and low light severely degrades visibil
 </div>
 
 - **Improved Detection Accuracy**  
-  WDRNet preserves road textures and object boundaries more effectively than previous methods, resulting in stronger downstream perception. It achieves the highest performance across all detection metrics, with improvements of **+1.26% AP50**, **+1.37% AP60**, and **+1.37% Precision** over the best competing method.
 
 - **Robustness Under Adverse Weather**  
-  Competing approaches (e.g., UNIT, DCLGAN) often suppress semantic regions under heavy weather degradation, causing noticeable drops in detection accuracy. In contrast, WDRNet’s full-frequency modeling and high-frequency consistency better retain critical cues such as vehicle contours and lane structures, leading to more reliable detection outcomes.
+
 
 
 ---
