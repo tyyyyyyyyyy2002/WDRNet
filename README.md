@@ -91,7 +91,7 @@ If you find this work useful in your research, please cite:
 
 ```bibtex
 @article{WDRNet2025,
-  title={Breaking Weather Degradation: Wavelet-Contrastive WDRNet for Unsupervised All-Weather Understanding},
+  title={Beyond Weather Constraints : Unsupervisd All-weather Image Restoration via Adaptive Wavelet-Contrastive Learning},
   year={2025}
 }
 
