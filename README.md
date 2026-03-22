@@ -4,7 +4,7 @@ Adverse weather such as rain, fog, snow, and low light severely degrades visibil
 ---
 ## 📰 News  
 
-- **Dec 10, 2025**: Our paper is under submission to **ICME 2026** 📑  
+- **Mar 18, 2026**: Our paper is under submission to **SMC 2026** 📑  
 - **Nov 8, 2025**: Codes are released!  🚀
 - **Nov 8, 2025**: Homepage is released!💥
 ---
