@@ -90,9 +90,9 @@ python test.py --dataroot ./datasets/weather --name  AllWeather --mode WDRNet --
 If you find this work useful in your research, please cite:
 
 ```bibtex
-@article{WDRNet2025,
+@article{WDRNet2026,
   title={Beyond Weather Constraints : Unsupervisd All-weather Image Restoration via Adaptive Wavelet-Contrastive Learning},
-  year={2025}
+  year={2026}
 }
 
 ---
