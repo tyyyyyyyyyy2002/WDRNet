@@ -25,11 +25,11 @@ Adverse weather such as rain, fog, snow, and low light severely degrades visibil
 
 ## 📊 Experimental Results  
 <div align="center">
-  <img src="images/data.png" alt="Architecture diagram" width="1200" />
+  <img src="images/data.jpg" alt="Architecture diagram" width="1200" />
 </div>
 
 <div align="center">
-  <img src="images/compareimage.png" alt="Architecture diagram" width="1200" />
+  <img src="images/compareimage.jpg" alt="Architecture diagram" width="1200" />
 </div>
 
 - **Quantitative Comparison**  
